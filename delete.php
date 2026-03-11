@@ -1,17 +1,27 @@
 <?php
 require 'config.php';
 
-$id = (int)$_GET['id'];
-
-// cek foto lama
-$res = $conn->query("SELECT foto_peminjaman FROM PEMINJAMAN WHERE id_peminjaman=$id");
-$data = $res->fetch_assoc();
-
-if ($data && $data['foto_peminjaman'] && file_exists("uploads/" . $data['foto_peminjaman'])) {
-    unlink("uploads/" . $data['foto_peminjaman']);
+if (!isset($_GET['id'])) {
+    header("Location: index.php");
+    exit();
 }
 
-$stmt = $conn->prepare("DELETE FROM PEMINJAMAN WHERE id_peminjaman=?");
+$id = (int) $_GET['id'];
+
+$stmt = $conn->prepare("SELECT foto_peminjaman FROM PEMINJAMAN WHERE id_peminjaman = ?");
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$result = $stmt->get_result();
+$data = $result->fetch_assoc();
+
+if ($data && !empty($data['foto_peminjaman'])) {
+    $filePath = "uploads/" . $data['foto_peminjaman'];
+    if (file_exists($filePath)) {
+        unlink($filePath);
+    }
+}
+
+$stmt = $conn->prepare("DELETE FROM PEMINJAMAN WHERE id_peminjaman = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
 

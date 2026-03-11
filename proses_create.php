@@ -18,7 +18,7 @@ if (!empty($_FILES['foto_peminjaman']['name'])) {
 }
 
 $stmt = $conn->prepare("
-    INSERT INTO PEMINJAMAN 
+    INSERT INTO PEMINJAMAN
     (nama_peminjam, kelas, ruangan_dipinjam, tanggal_pinjam, tanggal_kembali, keterangan, foto_peminjaman) 
     VALUES (?, ?, ?, ?, ?, ?, ?)
 ");
