@@ -12,26 +12,26 @@
 
 ---
 
-## 📌 Overview
+## Overview
 A classic PHP web application designed to manage equipment inventory, track item borrowing cycles, and record return confirmations with MySQL database integration.
 
 ---
 
-## ✨ Key Features
+## Key Features
 - Complete CRUD operations for item inventory and borrower records
 - Lending date and expected return date tracking
 - Direct MySQL database connection via PHP mysqli/PDO
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language**: PHP
 - **Database**: MySQL
 - **Frontend**: HTML5, CSS3, Bootstrap
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```text
 peminjaman-/
 ├── config.php          # Database configuration
@@ -43,7 +43,7 @@ peminjaman-/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 Make sure you have the required runtimes and tools installed on your machine:
@@ -61,7 +61,7 @@ git clone https://github.com/MohammadKevin/peminjaman-.git
 
 ---
 
-## 👤 Author
+## Author
 **Mohammad Kevin Arif Rudianto**
 - **GitHub:** [@MohammadKevin](https://github.com/MohammadKevin)
 - **Portfolio:** [portfolio-mohammadkevin.vercel.app](https://portfolio-mohammadkevin.vercel.app)
@@ -70,9 +70,9 @@ git clone https://github.com/MohammadKevin/peminjaman-.git
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 <div align="center">
-⭐️ If you found this repository useful, please consider giving it a star!
+If you found this repository useful, please consider giving it a star!
 </div>
