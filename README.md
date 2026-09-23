@@ -18,9 +18,9 @@ A classic PHP web application designed to manage equipment inventory, track item
 ---
 
 ## ✨ Key Features
-- ⚡ **Complete CRUD operations for item inventory and borrower records**: Complete CRUD operations for item inventory and borrower records
-- ⚡ **Lending date and expected return date tracking**: Lending date and expected return date tracking
-- ⚡ **Direct MySQL database connection via PHP mysqli/PDO**: Direct MySQL database connection via PHP mysqli/PDO
+- Complete CRUD operations for item inventory and borrower records
+- Lending date and expected return date tracking
+- Direct MySQL database connection via PHP mysqli/PDO
 
 ---
 
